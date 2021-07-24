@@ -1,5 +1,5 @@
 https://ysnsn.cn/yarn-add.html
-https://ysnsn.cn/python-splider.html
+https://ysnsn.cn/python-spider.html
 https://ysnsn.cn/termux.html
 https://ysnsn.cn/jsdelivr-m3u8.html
 https://ysnsn.cn/dingdingzhibodownload.html
