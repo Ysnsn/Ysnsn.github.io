@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CET6</title>
+      <link href="/cet6.html"/>
+      <url>/cet6.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>还没开始·····················</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python爬虫学习笔记</title>
       <link href="/python-spider.html"/>
       <url>/python-spider.html</url>
@@ -321,9 +346,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 笔记 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       

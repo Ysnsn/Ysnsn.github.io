@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ysnsn.cn/"/>
-  <updated>2021-07-24T08:28:18.991Z</updated>
+  <updated>2021-09-16T09:17:36.945Z</updated>
   <id>https://ysnsn.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CET6</title>
+    <link href="https://ysnsn.cn/cet6.html"/>
+    <id>https://ysnsn.cn/cet6.html</id>
+    <published>2021-09-16T05:13:54.000Z</published>
+    <updated>2021-09-16T09:17:36.945Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>还没开始·····················</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      英语六级复习笔记
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://ysnsn.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="笔记" scheme="https://ysnsn.cn/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Python爬虫学习笔记</title>
@@ -322,9 +345,9 @@
       <category term="学习笔记" scheme="https://ysnsn.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="python" scheme="https://ysnsn.cn/tags/python/"/>
-    
       <category term="笔记" scheme="https://ysnsn.cn/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="python" scheme="https://ysnsn.cn/tags/python/"/>
     
   </entry>
   
@@ -496,31 +519,6 @@
       <category term="名言" scheme="https://ysnsn.cn/tags/%E5%90%8D%E8%A8%80/"/>
     
       <category term="名句" scheme="https://ysnsn.cn/tags/%E5%90%8D%E5%8F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown语法</title>
-    <link href="https://ysnsn.cn/markdown.html"/>
-    <id>https://ysnsn.cn/markdown.html</id>
-    <published>2020-07-20T02:11:06.000Z</published>
-    <updated>2020-07-30T09:25:27.106Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="如果有一个好的markdown编辑器下面的基本就不用看了-推荐typora"><strong>如果有一个好的markdown编辑器下面的基本就不用看了</strong>      <a href="https://typora.io/">推荐typora</a></h2><h3 id="一、标题">一、标题</h3><ul><li><p>在想要设置为标题的文字前面加#来表示</p></li><li><p>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p></li><li><p>注：标准语法一般在#后跟个空格再写文字.</p></li></ul><p>示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br></pre></td></tr></table></figure><h3 id="二、字体">二、字体</h3><h4 id="加粗">加粗</h4><ul><li>要加粗的文字左右分别用两个*号包起来</li></ul><h4 id="斜体">斜体</h4><ul><li>要倾斜的文字左右分别用一个*号包起来</li></ul><h4 id="斜体加粗">斜体加粗</h4><ul><li>要倾斜和加粗的文字左右分别用三个*号包起来</li></ul><h4 id="删除线">删除线</h4><ul><li>要加删除线的文字左右分别用两个~~号包起来</li></ul><p>示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*&#96;</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure><h3 id="三、引用">三、引用</h3><ul><li>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br>n个…<br>貌似可以一直加下去，但没神马卵用</li></ul><p>示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure><h3 id="四、分割线">四、分割线</h3><ul><li>三个或者三个以上的 - 或者 * 都可以。</li></ul><p>示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure><h3 id="五、图片">五、图片</h3><ul><li>语法：</li></ul><p>![图片alt](图片地址 ‘‘图片title’’)</p><p>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p><h3 id="六、超链接">六、超链接</h3><ul><li>语法：</li></ul><p><a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="超链接title">超链接名</a><br>title可加可不加<br>示例：</p><p><a href="http://baidu.com">百度</a></p><p><a href="超链接地址" target="_blank">超链接名</a></p><p>示例<br><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p><h3 id="七、列表">七、列表</h3><ul><li><p>无序列表</p></li><li><p>语法：</p></li><li><p>无序列表用 - + * 任何一种都可以</p><ul><li>列表内容</li></ul><ul><li>列表内容</li></ul><ul><li>列表内容</li></ul></li></ul><p>注意：- + * 跟内容之间都要有一个空格</p><p>语法：<br>数字加点</p><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><p>注意：序号跟内容之间要有空格</p><p>上一级和下一级之间敲三个空格即可</p><p>一级无序列表内容</p><p>二级无序列表内容<br>二级无序列表内容<br>二级无序列表内容<br>一级无序列表内容</p><p>二级有序列表内容<br>二级有序列表内容<br>二级有序列表内容<br>一级有序列表内容</p><p>二级无序列表内容<br>二级无序列表内容<br>二级无序列表内容<br>一级有序列表内容</p><p>二级有序列表内容<br>二级有序列表内容<br>二级有序列表内容</p><h3 id="八、表格">八、表格</h3><ul><li>语法：</li></ul><table><thead><tr><th>表头</th><th style="text-align:center">表头</th><th style="text-align:right">表头</th></tr></thead><tbody><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr></tbody></table><p>第二行分割表头和内容。</p><ul><li>有一个就行，为了对齐，多加了几个<br>文字默认居左<br>-两边加：表示文字居中<br>-右边加：表示文字居右<br>注：原生的语法两边都要用 | 包起来。此处省略<br>示例：</li></ul><table><thead><tr><th>姓名</th><th style="text-align:center">技能</th><th style="text-align:right">排行</th></tr></thead><tbody><tr><td>刘备</td><td style="text-align:center">哭</td><td style="text-align:right">大哥</td></tr><tr><td>关羽</td><td style="text-align:center">打</td><td style="text-align:right">二哥</td></tr><tr><td>张飞</td><td style="text-align:center">骂</td><td style="text-align:right">三弟</td></tr></tbody></table><p>姓名技能排行<br>刘备哭大哥<br>关羽打二哥<br>张飞骂三弟</p><h3 id="九、代码">九、代码</h3><ul><li><p>语法：</p></li><li><p>单行代码: 代码之间分别用一个反引号包起来</p><p><code>代码内容</code><br>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p></li></ul><p>(<code>)   代码...   代码...   代码... (</code>)</p><p>示例：</p><p>单行代码</p><p><code>create database hero;</code><br>代码块</p><p>(<code>)     function fun()&#123;          echo &quot;这是一句非常牛逼的代码&quot;;     &#125;     fun(); (</code>)<br>效果如下：</p><p>单行代码</p><p>create database hero;</p><p>代码块</p><p>function fun(){<br>echo “这是一句非常牛逼的代码”;<br>}<br>fun();</p><h4 id="十、流程图">十、流程图</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">op&#x3D;&gt;operation: My Operation</span><br><span class="line">cond&#x3D;&gt;condition: Yes or No?</span><br><span class="line">e&#x3D;&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br><span class="line">&amp;&#96;&#96;&#96;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="插入视频-音频">插入视频&amp;音频</h4><video id="video" controls="" preload="none" poster="">      <source id="mp4" src="https://saekiraku.oss-cn-beijing.aliyuncs.com/github/vscode-rainbow-fart/showoff-1.mp4" type="video/mp4">      </video><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;video id&#x3D;&quot;video&quot; controls&#x3D;&quot;&quot; preload&#x3D;&quot;none&quot; poster&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;source id&#x3D;&quot;mp4&quot; src&#x3D;&quot;https:&#x2F;&#x2F;saekiraku.oss-cn-beijing.aliyuncs.com&#x2F;github&#x2F;vscode-rainbow-fart&#x2F;showoff-1.mp4&quot; type&#x3D;&quot;video&#x2F;mp4&quot;&gt;</span><br><span class="line">      &lt;&#x2F;video&gt;</span><br></pre></td></tr></table></figure><audio id="audio" controls="" preload="none">      <source id="mp3" src="http://qiniu.cloud.fandong.me/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3">      </audio><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio id&#x3D;&quot;audio&quot; controls&#x3D;&quot;&quot; preload&#x3D;&quot;none&quot;&gt;</span><br><span class="line">      &lt;source id&#x3D;&quot;mp3&quot; src&#x3D;&quot;http:&#x2F;&#x2F;qiniu.cloud.fandong.me&#x2F;Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3&quot;&gt;</span><br><span class="line">      &lt;&#x2F;audio&gt;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      markdown语法初识
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="https://ysnsn.cn/categories/Markdown/"/>
-    
-    
-      <category term="Markdown" scheme="https://ysnsn.cn/tags/Markdown/"/>
-    
-      <category term="基本" scheme="https://ysnsn.cn/tags/%E5%9F%BA%E6%9C%AC/"/>
     
   </entry>
   
