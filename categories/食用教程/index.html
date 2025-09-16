@@ -1,32 +1,121 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分类: 食用教程 | 阳光小饺子的空间</title><meta name="keywords" content="Ysnsn | 小洋博客 | 生活随记 | 阳光小饺子"><meta name="author" content="可爱的Wyang"><meta name="copyright" content="可爱的Wyang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="小洋的小窝">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>分类: 食用教程 | 阳光小饺子的空间</title><meta name="author" content="可爱的Wyang"><meta name="copyright" content="可爱的Wyang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="小洋的小窝">
 <meta property="og:type" content="website">
 <meta property="og:title" content="阳光小饺子的空间">
-<meta property="og:url" content="https://ysnsn.cn/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:url" content="https://ysnsn.github.io/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="阳光小饺子的空间">
 <meta property="og:description" content="小洋的小窝">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ysnsn.cn/img/avatar.png">
+<meta property="og:image" content="https://ysnsn.github.io/img/butterfly-icon.png">
 <meta property="article:author" content="可爱的Wyang">
 <meta property="article:tag" content="Ysnsn | 小洋博客 | 生活随记 | 阳光小饺子">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ysnsn.cn/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ysnsn.cn/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://ysnsn.github.io/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ysnsn.github.io/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  localSearch: undefined,
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
   copy: {
     success: '复制成功',
-    error: '复制错误',
+    error: '复制失败',
     noSupport: '浏览器不支持'
   },
   relativeDate: {
     homepage: false,
     post: false
   },
-  runtime: '天',
-  date_suffix: {
+  runtime: '',
+  dateSuffix: {
     just: '刚刚',
     min: '分钟前',
     hour: '小时前',
@@ -34,220 +123,116 @@
     month: '个月前'
   },
   copyright: undefined,
-  lightbox: 'mediumZoom',
-  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-center"},
-  source: {
-    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-    },
-    fancybox: {
-      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
-    }
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
   },
-  isPhotoFigcaption: true,
-  islazyload: false,
-  isanchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: false,
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: 食用教程',
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2021-09-16 17:19:58'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const fontSizeVal = saveToLocal.get('global-font-size')
-    if (fontSizeVal !== undefined) {
-      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
-    }
-    })(window)</script><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="阳光小饺子的空间" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/11/f20d13986e205910ef552cd530413d59.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">阳光小饺子的空间</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">食用教程</h1></div></header><main class="layout" id="content-inner"><div id="category"><div class="article-sort-title">分类 - 食用教程</div><div class="article-sort"><div class="article-sort-item year">2021</div><div class="article-sort-item"><a class="article-sort-item-img" href="/python-spider.html" title="Python爬虫学习笔记"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/wall.jpg" alt="Python爬虫学习笔记" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-07-24T05:13:54.000Z" title="发表于 2021-07-24 13:13:54">2021-07-24</time></div><a class="article-sort-item-title" href="/python-spider.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/yarn-add.html" title="yarn的安装使用"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/ff728455b2c576bacb6457bd6f9ea9af.png" alt="yarn的安装使用" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-02-06T05:13:54.000Z" title="发表于 2021-02-06 13:13:54">2021-02-06</time></div><a class="article-sort-item-title" href="/yarn-add.html" title="yarn的安装使用">yarn的安装使用</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/termux.html" title="termux高阶使用教程"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/f9243ef08bfc195c710328fcedc74609.png" alt="termux高阶使用教程" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-02-02T07:37:07.000Z" title="发表于 2021-02-02 15:37:07">2021-02-02</time></div><a class="article-sort-item-title" href="/termux.html" title="termux高阶使用教程">termux高阶使用教程</a></div></div><div class="article-sort-item year">2020</div><div class="article-sort-item"><a class="article-sort-item-img" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/04/2f5c7f8ae45dfbeeaa19d3b092045770.png" alt="利用ffmpeg制作视频床" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-12-04T15:09:26.000Z" title="发表于 2020-12-04 23:09:26">2020-12-04</time></div><a class="article-sort-item-title" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床">利用ffmpeg制作视频床</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/git-using.html" title="Git命令大全200个左右"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@latest/a/20200805214203.jpg" alt="Git命令大全200个左右" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-10-04T15:09:26.000Z" title="发表于 2020-10-04 23:09:26">2020-10-04</time></div><a class="article-sort-item-title" href="/git-using.html" title="Git命令大全200个左右">Git命令大全200个左右</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/pip-using.html" title="pip高阶用法"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@latest/a/20200703081635.jpg" alt="pip高阶用法" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-10-04T14:09:26.000Z" title="发表于 2020-10-04 22:09:26">2020-10-04</time></div><a class="article-sort-item-title" href="/pip-using.html" title="pip高阶用法">pip高阶用法</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/qingniandaxuexi.html" title="青年大学习跳过视频，直接满分"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/01/6d5307415598ab46e81f7ceeabab8c12.png" alt="青年大学习跳过视频，直接满分" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-09-07T14:37:18.000Z" title="发表于 2020-09-07 22:37:18">2020-09-07</time></div><a class="article-sort-item-title" href="/qingniandaxuexi.html" title="青年大学习跳过视频，直接满分">青年大学习跳过视频，直接满分</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/beautiful-checkin.html" title="优雅的进行签到-dora&amp;云函数&amp;GitHubAction"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/01/7cd36ff81f01ccef80e9e3b61bbb5f8f.png" alt="优雅的进行签到-dora&amp;云函数&amp;GitHubAction" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-09-05T15:24:09.000Z" title="发表于 2020-09-05 23:24:09">2020-09-05</time></div><a class="article-sort-item-title" href="/beautiful-checkin.html" title="优雅的进行签到-dora&amp;云函数&amp;GitHubAction">优雅的进行签到-dora&amp;云函数&amp;GitHubAction</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/40781.html" title="快速搭建自己的网页版GitHub图床（真香）"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@master/111/20200822112522.jpg" alt="快速搭建自己的网页版GitHub图床（真香）" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-08-24T01:03:49.000Z" title="发表于 2020-08-24 09:03:49">2020-08-24</time></div><a class="article-sort-item-title" href="/40781.html" title="快速搭建自己的网页版GitHub图床（真香）">快速搭建自己的网页版GitHub图床（真香）</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/page/2/">2</a><a class="extend next" rel="next" href="/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">可爱的Wyang</div><div class="author-info__description">人生即是旅途，我们都在路上</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ysnsn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Ysnsn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wyang0558@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2746130558&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=1370825920" target="_blank" title="网抑云"><i class="fab fa-gg"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><marquee> Welcome to <a style="color:red" href="https://ysnsn.cn" target="_blank" rel="noopener">Ysnsn博客</a>👉本站已开启Pjax，喜欢请收藏本站呦 ^_^!</marquee>  <div class="social-button"> <a class="button--animated" style="text-align:center;position:relative; z-index:1;display:block;background-color:#49b1f5;color:#fff;line-height:2em;margin:auto;padding:.2em" href="https://jq.qq.com/" rel="external nofollow noreferrer" target="_blank">加入 QQ 群聊 👍</a> </div> <br></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cet6.html" title="CET6"><img src="https://cdn.jsdelivr.net/gh//Ysnsn/img@latest/2021/美女%20-%2028.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CET6"/></a><div class="content"><a class="title" href="/cet6.html" title="CET6">CET6</a><time datetime="2021-09-16T05:13:54.000Z" title="发表于 2021-09-16 13:13:54">2021-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/python-spider.html" title="Python爬虫学习笔记"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/wall.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python爬虫学习笔记"/></a><div class="content"><a class="title" href="/python-spider.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a><time datetime="2021-07-24T05:13:54.000Z" title="发表于 2021-07-24 13:13:54">2021-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/yarn-add.html" title="yarn的安装使用"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/ff728455b2c576bacb6457bd6f9ea9af.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="yarn的安装使用"/></a><div class="content"><a class="title" href="/yarn-add.html" title="yarn的安装使用">yarn的安装使用</a><time datetime="2021-02-06T05:13:54.000Z" title="发表于 2021-02-06 13:13:54">2021-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/termux.html" title="termux高阶使用教程"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/f9243ef08bfc195c710328fcedc74609.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="termux高阶使用教程"/></a><div class="content"><a class="title" href="/termux.html" title="termux高阶使用教程">termux高阶使用教程</a><time datetime="2021-02-02T07:37:07.000Z" title="发表于 2021-02-02 15:37:07">2021-02-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/04/2f5c7f8ae45dfbeeaa19d3b092045770.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="利用ffmpeg制作视频床"/></a><div class="content"><a class="title" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床">利用ffmpeg制作视频床</a><time datetime="2020-12-04T15:09:26.000Z" title="发表于 2020-12-04 23:09:26">2020-12-04</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+  pageType: 'category'
+}</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">阳光小饺子的空间</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">食用教程</h1></div></header><main class="layout" id="content-inner"><div id="category"><div class="article-sort-title">分类 - 食用教程</div><div class="article-sort"><div class="article-sort-item year">2021</div><div class="article-sort-item"><a class="article-sort-item-img" href="/python-spider.html" title="Python爬虫学习笔记"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/wall.jpg" alt="Python爬虫学习笔记" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-07-24T05:13:54.000Z" title="发表于 2021-07-24 13:13:54">2021-07-24</time></div><a class="article-sort-item-title" href="/python-spider.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/yarn-add.html" title="yarn的安装使用"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/ff728455b2c576bacb6457bd6f9ea9af.png" alt="yarn的安装使用" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-02-06T05:13:54.000Z" title="发表于 2021-02-06 13:13:54">2021-02-06</time></div><a class="article-sort-item-title" href="/yarn-add.html" title="yarn的安装使用">yarn的安装使用</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/termux.html" title="termux高阶使用教程"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/f9243ef08bfc195c710328fcedc74609.png" alt="termux高阶使用教程" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-02-02T07:37:07.000Z" title="发表于 2021-02-02 15:37:07">2021-02-02</time></div><a class="article-sort-item-title" href="/termux.html" title="termux高阶使用教程">termux高阶使用教程</a></div></div><div class="article-sort-item year">2020</div><div class="article-sort-item"><a class="article-sort-item-img" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/04/2f5c7f8ae45dfbeeaa19d3b092045770.png" alt="利用ffmpeg制作视频床" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-12-04T15:09:26.000Z" title="发表于 2020-12-04 23:09:26">2020-12-04</time></div><a class="article-sort-item-title" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床">利用ffmpeg制作视频床</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/git-using.html" title="Git命令大全200个左右"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@latest/a/20200805214203.jpg" alt="Git命令大全200个左右" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-10-04T15:09:26.000Z" title="发表于 2020-10-04 23:09:26">2020-10-04</time></div><a class="article-sort-item-title" href="/git-using.html" title="Git命令大全200个左右">Git命令大全200个左右</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/pip-using.html" title="pip高阶用法"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@latest/a/20200703081635.jpg" alt="pip高阶用法" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-10-04T14:09:26.000Z" title="发表于 2020-10-04 22:09:26">2020-10-04</time></div><a class="article-sort-item-title" href="/pip-using.html" title="pip高阶用法">pip高阶用法</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/qingniandaxuexi.html" title="青年大学习跳过视频，直接满分"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/01/6d5307415598ab46e81f7ceeabab8c12.png" alt="青年大学习跳过视频，直接满分" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-09-07T14:37:18.000Z" title="发表于 2020-09-07 22:37:18">2020-09-07</time></div><a class="article-sort-item-title" href="/qingniandaxuexi.html" title="青年大学习跳过视频，直接满分">青年大学习跳过视频，直接满分</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/beautiful-checkin.html" title="优雅的进行签到-dora&amp;云函数&amp;GitHubAction"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/01/7cd36ff81f01ccef80e9e3b61bbb5f8f.png" alt="优雅的进行签到-dora&amp;云函数&amp;GitHubAction" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-09-05T15:24:09.000Z" title="发表于 2020-09-05 23:24:09">2020-09-05</time></div><a class="article-sort-item-title" href="/beautiful-checkin.html" title="优雅的进行签到-dora&amp;云函数&amp;GitHubAction">优雅的进行签到-dora&amp;云函数&amp;GitHubAction</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/40781.html" title="快速搭建自己的网页版GitHub图床（真香）"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@master/111/20200822112522.jpg" alt="快速搭建自己的网页版GitHub图床（真香）" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-08-24T01:03:49.000Z" title="发表于 2020-08-24 09:03:49">2020-08-24</time></div><a class="article-sort-item-title" href="/40781.html" title="快速搭建自己的网页版GitHub图床（真香）">快速搭建自己的网页版GitHub图床（真香）</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/page/2/">2</a><a class="extend next" rel="next" href="/categories/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">可爱的Wyang</div><div class="author-info-description">人生即是旅途，我们都在路上</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ysnsn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Ysnsn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wyang0558@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2746130558&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=1370825920" target="_blank" title="网抑云"><i class="fab fa-gg"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><marquee> Welcome to <a style="color:red" href="https://ysnsn.cn" target="_blank" rel="noopener">Ysnsn博客</a>👉本站已开启Pjax，喜欢请收藏本站呦 ^_^!</marquee>  <div class="social-button"> <a class="button--animated" style="text-align:center;position:relative; z-index:1;display:block;background-color:#49b1f5;color:#fff;line-height:2em;margin:auto;padding:.2em" href="https://jq.qq.com/" rel="external nofollow noreferrer" target="_blank">加入 QQ 群聊 👍</a> </div> <br></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/wyylovedsc.html" title="写给我的宝宝"><img src="/img/2025091601.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="写给我的宝宝"/></a><div class="content"><a class="title" href="/wyylovedsc.html" title="写给我的宝宝">写给我的宝宝</a><time datetime="2025-09-16T03:09:02.000Z" title="发表于 2025-09-16 11:09:02">2025-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cet6.html" title="CET6"><img src="https://cdn.jsdelivr.net/gh//Ysnsn/img@latest/2021/美女%20-%2028.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CET6"/></a><div class="content"><a class="title" href="/cet6.html" title="CET6">CET6</a><time datetime="2021-09-16T05:13:54.000Z" title="发表于 2021-09-16 13:13:54">2021-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/python-spider.html" title="Python爬虫学习笔记"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/wall.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python爬虫学习笔记"/></a><div class="content"><a class="title" href="/python-spider.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a><time datetime="2021-07-24T05:13:54.000Z" title="发表于 2021-07-24 13:13:54">2021-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/yarn-add.html" title="yarn的安装使用"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/ff728455b2c576bacb6457bd6f9ea9af.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="yarn的安装使用"/></a><div class="content"><a class="title" href="/yarn-add.html" title="yarn的安装使用">yarn的安装使用</a><time datetime="2021-02-06T05:13:54.000Z" title="发表于 2021-02-06 13:13:54">2021-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/termux.html" title="termux高阶使用教程"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/f9243ef08bfc195c710328fcedc74609.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="termux高阶使用教程"/></a><div class="content"><a class="title" href="/termux.html" title="termux高阶使用教程">termux高阶使用教程</a><time datetime="2021-02-02T07:37:07.000Z" title="发表于 2021-02-02 15:37:07">2021-02-02</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             <a class="card-more-btn" href="/categories/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a>
-            </div>
-            <ul class="card-category-list" id="aside-cat-list">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/GitHub/"><span class="card-category-list-name">GitHub</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Markdown/"><span class="card-category-list-name">Markdown</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">学习笔记</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"><span class="card-category-list-name">实用软件</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">日常生活</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/"><span class="card-category-list-name">生活随记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BE%8E%E6%96%87%E7%BE%8E%E5%9B%BE/"><span class="card-category-list-name">美文美图</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%87%8D%E6%96%B0%E6%9D%A5%E8%BF%87/"><span class="card-category-list-name">重新来过</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.3em; color: rgb(199, 44, 76)">笔记</a><a href="/tags/GitHub/" style="font-size: 1.45em; color: rgb(183, 0, 68)">GitHub</a><a href="/tags/%E6%95%99%E8%82%B2%E4%BC%98%E6%83%A0/" style="font-size: 1.15em; color: rgb(170, 156, 100)">教育优惠</a><a href="/tags/github/" style="font-size: 1.15em; color: rgb(66, 125, 12)">github</a><a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 1.15em; color: rgb(123, 196, 73)">总结</a><a href="/tags/butterfly/" style="font-size: 1.15em; color: rgb(60, 23, 71)">butterfly</a><a href="/tags/jsdelivr/" style="font-size: 1.45em; color: rgb(18, 151, 131)">jsdelivr</a><a href="/tags/Git/" style="font-size: 1.15em; color: rgb(0, 57, 99)">Git</a><a href="/tags/Markdown/" style="font-size: 1.3em; color: rgb(142, 169, 190)">Markdown</a><a href="/tags/%E5%9F%BA%E6%9C%AC/" style="font-size: 1.15em; color: rgb(79, 15, 166)">基本</a><a href="/tags/pip/" style="font-size: 1.15em; color: rgb(52, 106, 23)">pip</a><a href="/tags/yarn/" style="font-size: 1.15em; color: rgb(4, 76, 8)">yarn</a><a href="/tags/npm/" style="font-size: 1.15em; color: rgb(50, 78, 117)">npm</a><a href="/tags/python/" style="font-size: 1.3em; color: rgb(57, 100, 118)">python</a><a href="/tags/GitHubAction/" style="font-size: 1.15em; color: rgb(48, 133, 55)">GitHubAction</a><a href="/tags/%E4%BA%91%E5%87%BD%E6%95%B0/" style="font-size: 1.15em; color: rgb(45, 107, 110)">云函数</a><a href="/tags/dora/" style="font-size: 1.15em; color: rgb(59, 89, 128)">dora</a><a href="/tags/%E6%96%87%E6%A1%88/" style="font-size: 1.15em; color: rgb(72, 94, 19)">文案</a><a href="/tags/picture/" style="font-size: 1.3em; color: rgb(27, 159, 118)">picture</a><a href="/tags/m3u8/" style="font-size: 1.3em; color: rgb(152, 159, 193)">m3u8</a><a href="/tags/%E6%8A%93%E5%8C%85/" style="font-size: 1.15em; color: rgb(9, 150, 169)">抓包</a><a href="/tags/PC/" style="font-size: 1.15em; color: rgb(63, 42, 10)">PC</a><a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 1.15em; color: rgb(199, 69, 155)">软件</a><a href="/tags/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/" style="font-size: 1.15em; color: rgb(163, 0, 74)">虚拟主机</a><a href="/tags/%E7%BE%8E%E5%9B%BE/" style="font-size: 1.15em; color: rgb(96, 87, 167)">美图</a><a href="/tags/%E5%90%8D%E8%A8%80/" style="font-size: 1.15em; color: rgb(116, 171, 156)">名言</a><a href="/tags/%E5%90%8D%E5%8F%A5/" style="font-size: 1.15em; color: rgb(90, 109, 33)">名句</a><a href="/tags/%E8%B0%83%E8%AF%95/" style="font-size: 1.15em; color: rgb(101, 53, 83)">调试</a><a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" style="font-size: 1.15em; color: rgb(194, 190, 186)">青年大学习</a><a href="/tags/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/" style="font-size: 1.15em; color: rgb(58, 22, 87)">食用教程</a><a href="/tags/termux/" style="font-size: 1.15em; color: rgb(46, 75, 193)">termux</a><a href="/tags/%E7%BB%88%E7%AB%AF/" style="font-size: 1.15em; color: rgb(2, 165, 82)">终端</a><a href="/tags/Typora/" style="font-size: 1.15em; color: rgb(120, 199, 104)">Typora</a><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.15em; color: rgb(47, 124, 85)">教程</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/02/"><span class="card-archive-list-date">二月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">22</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-07-04T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">49.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-09-16T09:19:57.546Z"></div></div></div></div><div class="card-widget user-map" id="user-map"><div class="item-headline"><i class="fas fa-heartbeat"></i><span>访客地图</span></div><div class="item-content"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=IdxZ3XPrCYCm-XSD2Zjzn78xygXvpDcjsFBvoB8SCoQ"></script></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/11/f20d13986e205910ef552cd530413d59.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 可爱的Wyang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png"align="absmiddle" width="59px" height="30px" /></a><span>提供加速服务</span></div><div id="running-time"></div><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2020,06,23,0,0,0)).getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='🌈本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.17.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
-  const changeContent = (content) => {
-    if (content === '') return content
-
-    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
-    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
-    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
-    content = content.replace(/<[^>]+>/g,"") // remove html tag
-
-    if (content.length > 150) {
-      content = content.substring(0,150) + '...'
-    }
-    return content
-  }
-
-  const getIcon = (icon, mail) => {
-    if (icon) return icon
-    let defaultIcon = '?d=monsterid'
-    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
-    return iconUrl
-  }
-
-  const generateHtml = array => {
-    let result = ''
-
-    if (array.length) {
-      for (let i = 0; i < array.length; i++) {
-        result += '<div class=\'aside-list-item\'>'
-
-        if (true) {
-          const name = 'src'
-          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
-        }
-
-        result += `<div class='content'>
-        <a class='comment' href='${array[i].url}'>${array[i].content}</a>
-        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
-        </div></div>`
-      }
-    } else {
-      result += '没有评论'
-    }
-
-    let $dom = document.querySelector('#card-newest-comments .aside-list')
-    $dom.innerHTML= result
-    window.lazyLoadInstance && window.lazyLoadInstance.update()
-    window.pjax && window.pjax.refresh($dom)
-  }
-
-  const getComment = () => {
-    const serverURL = 'https://pE6fuMFt.api.lncldglobal.com'
-
-    var settings = {
-      "method": "GET",
-      "headers": {
-        "X-LC-Id": 'pE6fuMFtYcEgYTceSY23YlFs-MdYXbMMI',
-        "X-LC-Key": 'GwiyT9FTAXYmRfkn24oywXtu',
-        "Content-Type": "application/json"
-      },
-    }
-
-    fetch(`${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,settings)
-      .then(response => response.json())
-      .then(data => {
-        const valineArray = data.results.map(function (e) {
-          return {
-            'avatar': getIcon(e.QQAvatar, e.mail),
-            'content': changeContent(e.comment),
-            'nick': e.nick,
-            'url': e.url + '#' + e.objectId,
-            'date': e.updatedAt,
-          }
-        })
-        saveToLocal.set('valine-newest-comments', JSON.stringify(valineArray), 10/(60*24))
-        generateHtml(valineArray)
-      }).catch(e => {
-        const $dom = document.querySelector('#card-newest-comments .aside-list')
-        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
-      }) 
-  }
-
-  const newestCommentInit = () => {
-    if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('valine-newest-comments')
-      if (data) {
-        generateHtml(JSON.parse(data))
-      } else {
-        getComment()
-      }
-    }
-  }
-
-  newestCommentInit()
-  document.addEventListener('pjax:complete', newestCommentInit)
-})</script><link rel="stylesheet" href="/css/ysnsn.css"><script src="/js/ysnsn.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-POWERMODE.mobile = false;
-document.body.addEventListener('input', POWERMODE);
-</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left"},"mobile":{"show":false},"model":{"scale":1.2,"jsonPath":"/live2d/assets/weier.model.json"},"log":false});</script></body></html>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%9F%BA%E6%9C%AC/" style="font-size: 1.1em; color: #999">基本</a> <a href="/tags/Markdown/" style="font-size: 1.3em; color: #99a1ac">Markdown</a> <a href="/tags/%E4%BA%91%E5%87%BD%E6%95%B0/" style="font-size: 1.1em; color: #999">云函数</a> <a href="/tags/%E6%96%87%E6%A1%88/" style="font-size: 1.1em; color: #999">文案</a> <a href="/tags/termux/" style="font-size: 1.1em; color: #999">termux</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.3em; color: #99a1ac">笔记</a> <a href="/tags/%E5%90%8D%E5%8F%A5/" style="font-size: 1.1em; color: #999">名句</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.1em; color: #999">教程</a> <a href="/tags/GitHub/" style="font-size: 1.5em; color: #99a9bf">GitHub</a> <a href="/tags/%E6%95%99%E8%82%B2%E4%BC%98%E6%83%A0/" style="font-size: 1.1em; color: #999">教育优惠</a> <a href="/tags/GitHubAction/" style="font-size: 1.1em; color: #999">GitHubAction</a> <a href="/tags/dora/" style="font-size: 1.1em; color: #999">dora</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/" style="font-size: 1.1em; color: #999">虚拟主机</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 1.1em; color: #999">总结</a> <a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">青年大学习</a> <a href="/tags/Typora/" style="font-size: 1.1em; color: #999">Typora</a> <a href="/tags/butterfly/" style="font-size: 1.1em; color: #999">butterfly</a> <a href="/tags/%E5%86%99%E5%AE%9E/" style="font-size: 1.1em; color: #999">写实</a> <a href="/tags/PC/" style="font-size: 1.1em; color: #999">PC</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/picture/" style="font-size: 1.3em; color: #99a1ac">picture</a> <a href="/tags/pip/" style="font-size: 1.1em; color: #999">pip</a> <a href="/tags/%E7%BB%88%E7%AB%AF/" style="font-size: 1.1em; color: #999">终端</a> <a href="/tags/%E9%A3%9F%E7%94%A8%E6%95%99%E7%A8%8B/" style="font-size: 1.1em; color: #999">食用教程</a> <a href="/tags/%E6%83%85%E4%B9%A6/" style="font-size: 1.1em; color: #999">情书</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 1.1em; color: #999">记录</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/jsdelivr/" style="font-size: 1.5em; color: #99a9bf">jsdelivr</a> <a href="/tags/%E7%BE%8E%E5%9B%BE/" style="font-size: 1.1em; color: #999">美图</a> <a href="/tags/github/" style="font-size: 1.1em; color: #999">github</a> <a href="/tags/%E5%90%8D%E8%A8%80/" style="font-size: 1.1em; color: #999">名言</a> <a href="/tags/yarn/" style="font-size: 1.1em; color: #999">yarn</a> <a href="/tags/m3u8/" style="font-size: 1.3em; color: #99a1ac">m3u8</a> <a href="/tags/%E8%B0%83%E8%AF%95/" style="font-size: 1.1em; color: #999">调试</a> <a href="/tags/%E6%8A%93%E5%8C%85/" style="font-size: 1.1em; color: #999">抓包</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 1.1em; color: #999">软件</a> <a href="/tags/python/" style="font-size: 1.3em; color: #99a1ac">python</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2021/09/">
+            <span class="card-archive-list-date">
+              九月 2021
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2021/07/">
+            <span class="card-archive-list-date">
+              七月 2021
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2021/02/">
+            <span class="card-archive-list-date">
+              二月 2021
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2020/12/">
+            <span class="card-archive-list-date">
+              十二月 2020
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2020/10/">
+            <span class="card-archive-list-date">
+              十月 2020
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2020/09/">
+            <span class="card-archive-list-date">
+              九月 2020
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2020/08/">
+            <span class="card-archive-list-date">
+              八月 2020
+            </span>
+            <span class="card-archive-list-count">6</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">23</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-16T08:33:40.951Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 可爱的Wyang</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 6.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left"},"mobile":{"show":false},"model":{"scale":1.2,"jsonPath":"/live2d_models/assets/weier.model.json"},"log":false});</script></body></html>
