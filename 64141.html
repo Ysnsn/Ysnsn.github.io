@@ -1,35 +1,139 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>实用软件分享 | 阳光小饺子的空间</title><meta name="keywords" content="PC,软件"><meta name="author" content="可爱的Wyang"><meta name="copyright" content="可爱的Wyang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="推荐一些使用起来高效的软件">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>实用软件分享 | 阳光小饺子的空间</title><meta name="author" content="可爱的Wyang"><meta name="copyright" content="可爱的Wyang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="推荐一些使用起来高效的软件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="实用软件分享">
-<meta property="og:url" content="https://ysnsn.cn/64141.html">
+<meta property="og:url" content="https://ysnsn.github.io/64141.html">
 <meta property="og:site_name" content="阳光小饺子的空间">
 <meta property="og:description" content="推荐一些使用起来高效的软件">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg">
 <meta property="article:published_time" content="2020-08-21T00:28:26.000Z">
-<meta property="article:modified_time" content="2020-09-18T08:25:49.549Z">
+<meta property="article:modified_time" content="2020-09-18T08:25:50.000Z">
 <meta property="article:author" content="可爱的Wyang">
 <meta property="article:tag" content="PC">
 <meta property="article:tag" content="软件">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ysnsn.cn/64141"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "实用软件分享",
+  "url": "https://ysnsn.github.io/64141.html",
+  "image": "https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg",
+  "datePublished": "2020-08-21T00:28:26.000Z",
+  "dateModified": "2020-09-18T08:25:50.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "可爱的Wyang",
+      "url": "https://Ysnsn.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ysnsn.github.io/64141.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  localSearch: undefined,
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
   copy: {
     success: '复制成功',
-    error: '复制错误',
+    error: '复制失败',
     noSupport: '浏览器不支持'
   },
   relativeDate: {
     homepage: false,
     post: false
   },
-  runtime: '天',
-  date_suffix: {
+  runtime: '',
+  dateSuffix: {
     just: '刚刚',
     min: '分钟前',
     hour: '小时前',
@@ -37,152 +141,50 @@
     month: '个月前'
   },
   copyright: undefined,
-  lightbox: 'mediumZoom',
-  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-center"},
-  source: {
-    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-    },
-    fancybox: {
-      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
-    }
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
   },
-  isPhotoFigcaption: true,
-  islazyload: false,
-  isanchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
-  isPost: true,
-  isHome: false,
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '实用软件分享',
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2020-09-18 16:25:49'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const fontSizeVal = saveToLocal.get('global-font-size')
-    if (fontSizeVal !== undefined) {
-      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
-    }
-    })(window)</script><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="阳光小饺子的空间" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">阳光小饺子的空间</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">实用软件分享</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-21T00:28:26.000Z" title="发表于 2020-08-21 08:28:26">2020-08-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-09-18T08:25:49.549Z" title="更新于 2020-09-18 16:25:49">2020-09-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/">实用软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">961</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="实用软件分享"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="🧨前言须知">🧨前言须知</h2>
-<blockquote>
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">阳光小饺子的空间</span></a><a class="nav-page-title" href="/"><span class="site-name">实用软件分享</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/mikutap/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-cocktail"></i><span> 哔哩哔哩</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-inbox"></i><span> 基地</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/"><i class="fa-fw fas fa-cloud-download-alt"></i><span> 网盘OM</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://tc.ysnsn.cn/"><i class="fa-fw fas fa-paper-plane"></i><span> 立即前往</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://zz.ysnsn.cn/"><i class="fa-fw fas fa-feather"></i><span> Donate</span></a></li><li><a class="site-page child" href="/sitemap.xml"><i class="fa-fw fas fa-map-marked-alt"></i><span> sitemap</span></a></li><li><a class="site-page child" href="/baidusitemap.xml"><i class="fa-fw fas fa-map-marker-alt"></i><span> baidusitemap</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gavel"></i><span> 小应用</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/silk%20/silk/"><i class="fa-fw fas fa-signature"></i><span> 丝画</span></a></li><li><a class="site-page child" href="/caidie/"><i class="fa-fw fas fa-bug"></i><span> 彩蝶</span></a></li><li><a class="site-page child" href="/%E6%B6%B2%E4%BD%93/"><i class="fa-fw fas fa-bullseye"></i><span> 液体</span></a></li><li><a class="site-page child" href="/smail/"><i class="fa-fw fas fa-democrat"></i><span> 笑脸滑稽</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></li><li><a class="site-page child" href="/sc/"><i class="fa-fw fas fa-key"></i><span> 每日诗词</span></a></li><li><a class="site-page child" href="/wysp/"><i class="fa-fw fas fa-fire"></i><span> 网易热评</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">实用软件分享</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-21T00:28:26.000Z" title="发表于 2020-08-21 08:28:26">2020-08-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-09-18T08:25:50.000Z" title="更新于 2020-09-18 16:25:50">2020-09-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/">实用软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:1000,&quot;messagePrev&quot;:&quot;It has been&quot;,&quot;messageNext&quot;:&quot;days since the last update, the content of the article may be outdated.&quot;,&quot;postUpdate&quot;:&quot;2020-09-18 16:25:50&quot;}" hidden></div><h2 id="🧨前言须知"><a href="#🧨前言须知" class="headerlink" title="🧨前言须知"></a>🧨前言须知</h2><blockquote>
 <ul>
 <li>本博客不提供任何经过第三方修改的软件</li>
 <li>仅仅是为了记录自己使用过的一些实用软件</li>
 </ul>
 </blockquote>
-<h2 id="🎃正确的访问Google（主要是看到好多人还不会）">🎃正确的访问Google（主要是看到好多人还不会）</h2>
-<blockquote>
+<h2 id="🎃正确的访问Google（主要是看到好多人还不会）"><a href="#🎃正确的访问Google（主要是看到好多人还不会）" class="headerlink" title="🎃正确的访问Google（主要是看到好多人还不会）"></a>🎃正确的访问Google（主要是看到好多人还不会）</h2><blockquote>
 <p>谷歌邮箱 谷歌搜索 谷歌扩展商店 谷歌家的东西基本都能访问了</p>
 </blockquote>
 <ul>
-<li>
-<p>IGG谷歌访问助手👉<a target="_blank" rel="noopener" href="https://iguge.app/">IGG</a></p>
+<li><p>IGG谷歌访问助手👉<a target="_blank" rel="noopener" href="https://iguge.app/">IGG</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/20200821%20(1).png" alt="图1"></p>
 </li>
-<li>
-<p>选择离线安装，下载得到压缩包并解压得到图3</p>
+<li><p>选择离线安装，下载得到压缩包并解压得到图3</p>
 </li>
-<li>
-<p>打开你的Chrome浏览器的 更多工具&gt;扩展程序页面<br>
-<img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/20200821%20(2).png" alt="图2"></p>
+<li><p>打开你的Chrome浏览器的 更多工具&gt;扩展程序页面<br><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/20200821%20(2).png" alt="图2"></p>
 </li>
-<li>
-<p>1、点击右上角 开发者模式 开关 2、再点击左上角 “添加已解压的扩展程序” 3、选择本次下载包里目录（即图3所示）  4、确认选取.<br>
-<img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/20200821%20(3).png" alt="图3"></p>
+<li><p>1、点击右上角 开发者模式 开关 2、再点击左上角 “添加已解压的扩展程序” 3、选择本次下载包里目录（即图3所示）  4、确认选取.<br><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/20200821%20(3).png" alt="图3"></p>
 </li>
-<li>
-<p>插件安装成功后如下图所示 并打开点击连接，就可以正常使用Google<br>
-<img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/202008214.png" alt=""></p>
+<li><p>插件安装成功后如下图所示 并打开点击连接，就可以正常使用Google<br><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img/202008214.png"></p>
 </li>
-<li>
-<p>以上是谷歌浏览器的方法，其它浏览器请正常安装。</p>
+<li><p>以上是谷歌浏览器的方法，其它浏览器请正常安装。</p>
 </li>
 </ul>
-<h2 id="🍡软件分享网站">🍡软件分享网站</h2>
-<ol>
+<h2 id="🍡软件分享网站"><a href="#🍡软件分享网站" class="headerlink" title="🍡软件分享网站"></a>🍡软件分享网站</h2><ol>
 <li>果核剥壳  <a target="_blank" rel="noopener" href="https://www.ghpym.com/">https://www.ghpym.com/</a></li>
 <li>小众软件 <a target="_blank" rel="noopener" href="https://www.appinn.com/">https://www.appinn.com/</a></li>
 <li>吾爱  <a target="_blank" rel="noopener" href="https://www.52pojie.cn/">https://www.52pojie.cn/</a></li>
@@ -191,161 +193,80 @@
 <li>电影分享蓝光原盘  <a target="_blank" rel="noopener" href="http://www.yinfans.me/">http://www.yinfans.me/</a></li>
 <li><a target="_blank" rel="noopener" href="https://getitfree.cn/">正版中国</a> 这是一个提供正版软件下载的网站，由一群大学生创建，旨在让更多人能用上正版软件。比如在官网首页，我们就能看到Office相关的折扣信息，力度很大，最低的直接到了2折，真的能省不少钱。不过这类的打折活动往往有时间限制。</li>
 <li><a target="_blank" rel="noopener" href="https://www.remove.bg/">removebg</a>这是国外一个专注于人物抠图的神器，抠图速度快（5秒内搞定），效果好。你只需上传图片，剩下的事情它会帮你搞定。</li>
-<li><a target="_blank" rel="noopener" href="https://www.toolnb.com">爱资料工具</a>在日常工作中，我们总是因为一些低频需求，被迫去网上寻找各种软</li>
+<li><a target="_blank" rel="noopener" href="https://www.toolnb.com/">爱资料工具</a>在日常工作中，我们总是因为一些低频需求，被迫去网上寻找各种软</li>
 <li><a target="_blank" rel="noopener" href="https://tools.miku.ac/">MikuTools</a></li>
 </ol>
-<h2 id="⚡卸载工具">⚡卸载工具</h2>
-<ol>
-<li>
-<p>小巧而能力强大的geek，免费版基本够用👉<a target="_blank" rel="noopener" href="https://geekuninstaller.com/download">geek</a></p>
+<h2 id="⚡卸载工具"><a href="#⚡卸载工具" class="headerlink" title="⚡卸载工具"></a>⚡卸载工具</h2><ol>
+<li><p>小巧而能力强大的geek，免费版基本够用👉<a target="_blank" rel="noopener" href="https://geekuninstaller.com/download">geek</a></p>
 </li>
-<li>
-<p>上面这一个就够日常使用，不再推荐了</p>
+<li><p>上面这一个就够日常使用，不再推荐了</p>
 </li>
 </ol>
-<h2 id="🚀下载神器">🚀下载神器</h2>
-<ol>
+<h2 id="🚀下载神器"><a href="#🚀下载神器" class="headerlink" title="🚀下载神器"></a>🚀下载神器</h2><ol>
 <li>IDM 多线程下载，速度没得说快就完事🤞<a target="_blank" rel="noopener" href="https://www.internetdownloadmanager.com/">IDM</a>正版需要付费，当然网上那些修改版的也有（自己去Google）</li>
 <li>哔哩哔哩视频及弹幕下载 🚩<a target="_blank" rel="noopener" href="http://client.jijidown.com/">唧唧</a></li>
-<li>百度网盘下载
-<ul>
+<li>百度网盘下载<ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/liupan1890/xiaobaiyang">6盘小白羊</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/yuantuo666/baiduwp-php">网页版速盘</a>可以自己搭建</li>
 </ul>
 </li>
-<li>音乐下载
-<ul>
+<li>音乐下载<ul>
 <li>music download批量无损下载 <a target="_blank" rel="noopener" href="https://www.nitian1207.cn/">🛴直达</a></li>
 <li>网页版也有很多（Google）</li>
 </ul>
 </li>
 </ol>
-<h2 id="🎇视频music">🎇视频music</h2>
-<ol>
+<h2 id="🎇视频music"><a href="#🎇视频music" class="headerlink" title="🎇视频music"></a>🎇视频music</h2><ol>
 <li>[potplayer] (<a target="_blank" rel="noopener" href="https://daumpotplayer.com/download/">https://daumpotplayer.com/download/</a>)</li>
-<li>音乐xiazmusic tool <a target="_blank" rel="noopener" href="http://tool.yijingying.com/musictools/">下载</a> 🎧<a target="_blank" rel="noopener" href="http://tool.yijingying.com/">官网</a><br>
-3.<a target="_blank" rel="noopener" href="https://www.lanzoux.com/b0sopazc">解锁网抑云灰色歌曲下载</a>  主程序地址  <a target="_blank" rel="noopener" href="https://github.com/nondanee/UnblockNeteaseMusic">https://github.com/nondanee/UnblockNeteaseMusic</a></li>
+<li>音乐xiazmusic tool <a target="_blank" rel="noopener" href="http://tool.yijingying.com/musictools/">下载</a> 🎧<a target="_blank" rel="noopener" href="http://tool.yijingying.com/">官网</a><br>3.<a target="_blank" rel="noopener" href="https://www.lanzoux.com/b0sopazc">解锁网抑云灰色歌曲下载</a>  主程序地址  <a target="_blank" rel="noopener" href="https://github.com/nondanee/UnblockNeteaseMusic">https://github.com/nondanee/UnblockNeteaseMusic</a></li>
 </ol>
-<h2 id="✅杀毒软件">✅杀毒软件</h2>
-<ol>
+<h2 id="✅杀毒软件"><a href="#✅杀毒软件" class="headerlink" title="✅杀毒软件"></a>✅杀毒软件</h2><ol>
 <li>win10自带的就够日常使用</li>
 <li><a target="_blank" rel="noopener" href="https://www.huorong.cn/">火绒安全</a></li>
 </ol>
-<h2 id="♻垃圾清理">♻垃圾清理</h2>
-<ol>
-<li>
-<p>CCleaner🍀<a target="_blank" rel="noopener" href="https://www.ccleaner.com/ccleaner/download">这里直达</a></p>
+<h2 id="♻垃圾清理"><a href="#♻垃圾清理" class="headerlink" title="♻垃圾清理"></a>♻垃圾清理</h2><ol>
+<li><p>CCleaner🍀<a target="_blank" rel="noopener" href="https://www.ccleaner.com/ccleaner/download">这里直达</a></p>
 </li>
-<li>
-<p>火绒也自带垃圾清理   <a target="_blank" rel="noopener" href="https://www.huorong.cn/">https://www.huorong.cn/</a></p>
+<li><p>火绒也自带垃圾清理   <a target="_blank" rel="noopener" href="https://www.huorong.cn/">https://www.huorong.cn/</a></p>
 </li>
 </ol>
-<h2 id="🔶电脑录屏">🔶电脑录屏</h2>
-<ol>
-<li>screen to gif<a target="_blank" rel="noopener" href="https://www.screentogif.com/downloads">官网</a></li>
-</ol>
-<a class="btn-beautify button--animated outline pink larger" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/yn/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/ScreenToGif_2.26_Single.zip" 
-  title="点我下载"><i class="fas fa-download fa-fw"></i><span>点我下载</span></a>
-<ol start="2">
-<li>班底录屏<a target="_blank" rel="noopener" href="https://www.bandicam.cn/downloads/">传送</a></li>
-</ol>
-<a class="btn-beautify button--animated outline pink larger" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/yn/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/Bandicam%204.5.8.1673%E7%BB%BF%E8%89%B2%E7%89%88.zip" 
-  title="点我下载"><i class="fas fa-download fa-fw"></i><span>点我下载</span></a>
-<ol start="3">
-<li>傲软录屏  <a target="_blank" rel="noopener" href="https://www.apowersoft.cn/record-all-screen">https://www.apowersoft.cn/record-all-screen</a></li>
-</ol>
-<a class="btn-beautify button--animated outline pink larger" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/yn/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/ApowerREC%201.1.8.zip" 
-  title="点我下载"><i class="fas fa-download fa-fw"></i><span>点我下载</span></a>
-<ol start="4">
+<h2 id="🔶电脑录屏"><a href="#🔶电脑录屏" class="headerlink" title="🔶电脑录屏"></a>🔶电脑录屏</h2><ol>
+<li>screen to gif<a target="_blank" rel="noopener" href="https://www.screentogif.com/downloads">官网</a><a class="btn-beautify outline pink larger" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/yn/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/ScreenToGif_2.26_Single.zip" title="点我下载"><i class="fas fa-download"></i><span>点我下载</span></a></li>
+<li>班底录屏<a target="_blank" rel="noopener" href="https://www.bandicam.cn/downloads/">传送</a><a class="btn-beautify outline pink larger" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/yn/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/Bandicam%204.5.8.1673%E7%BB%BF%E8%89%B2%E7%89%88.zip" title="点我下载"><i class="fas fa-download"></i><span>点我下载</span></a></li>
+<li>傲软录屏  <a target="_blank" rel="noopener" href="https://www.apowersoft.cn/record-all-screen">https://www.apowersoft.cn/record-all-screen</a><a class="btn-beautify outline pink larger" target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/yn/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/ApowerREC%201.1.8.zip" title="点我下载"><i class="fas fa-download"></i><span>点我下载</span></a></li>
 <li>office中的PPT也可以录屏</li>
 </ol>
-<h2 id="🛴解压缩">🛴解压缩</h2>
-<ol>
+<h2 id="🛴解压缩"><a href="#🛴解压缩" class="headerlink" title="🛴解压缩"></a>🛴解压缩</h2><ol>
 <li><a target="_blank" rel="noopener" href="https://www.bandisoft.com/bandizip/">bandizip</a>小巧</li>
-<li>Winrar好像有广告<a target="_blank" rel="noopener" href="https://winrar.en.softonic.com/">直达🌂</a>
-<ul>
-<li>把下面这段code文本复制到一个新建的记事本txt文档中，然后另存为rarreg.key文件，注意后缀名.txt改为 .key才行</li>
-</ul>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">RAR registration data</span><br><span class="line">Federal Agency for Education</span><br><span class="line">1000000 PC usage license</span><br><span class="line">UID&#x3D;b621cca9a84bc5deffbf</span><br><span class="line">6412612250ffbf533df6db2dfe8ccc3aae5362c06d54762105357d</span><br><span class="line">5e3b1489e751c76bf6e0640001014be50a52303fed29664b074145</span><br><span class="line">7e567d04159ad8defc3fb6edf32831fd1966f72c21c0c53c02fbbb</span><br><span class="line">2f91cfca671d9c482b11b8ac3281cb21378e85606494da349941fa</span><br><span class="line">e9ee328f12dc73e90b6356b921fbfb8522d6562a6a4b97e8ef6c9f</span><br><span class="line">fb866be1e3826b5aa126a4d2bfe9336ad63003fc0e71c307fc2c60</span><br><span class="line">64416495d4c55a0cc82d402110498da970812063934815d81470829275</span><br></pre></td></tr></table></figure>
-<ul>
+<li>Winrar好像有广告<a target="_blank" rel="noopener" href="https://winrar.en.softonic.com/">直达🌂</a><ul>
+<li>把下面这段code文本复制到一个新建的记事本txt文档中，然后另存为rarreg.key文件，注意后缀名.txt改为 .key才行 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">RAR registration data</span><br><span class="line">Federal Agency for Education</span><br><span class="line">1000000 PC usage license</span><br><span class="line">UID=b621cca9a84bc5deffbf</span><br><span class="line">6412612250ffbf533df6db2dfe8ccc3aae5362c06d54762105357d</span><br><span class="line">5e3b1489e751c76bf6e0640001014be50a52303fed29664b074145</span><br><span class="line">7e567d04159ad8defc3fb6edf32831fd1966f72c21c0c53c02fbbb</span><br><span class="line">2f91cfca671d9c482b11b8ac3281cb21378e85606494da349941fa</span><br><span class="line">e9ee328f12dc73e90b6356b921fbfb8522d6562a6a4b97e8ef6c9f</span><br><span class="line">fb866be1e3826b5aa126a4d2bfe9336ad63003fc0e71c307fc2c60</span><br><span class="line">64416495d4c55a0cc82d402110498da970812063934815d81470829275</span><br></pre></td></tr></table></figure></li>
 <li>然后把rarreg.key文件放入WinRAR安装目录即可完成注册。(没有弹窗)</li>
 </ul>
 </li>
 </ol>
-<h2 id="👓缩放浏览">👓缩放浏览</h2>
-<ol>
-<li>
-<p>Bigjpg - AI人工智能图片无损放大  <a target="_blank" rel="noopener" href="https://bigjpg.com/">https://bigjpg.com/</a></p>
+<h2 id="👓缩放浏览"><a href="#👓缩放浏览" class="headerlink" title="👓缩放浏览"></a>👓缩放浏览</h2><ol>
+<li><p>Bigjpg - AI人工智能图片无损放大  <a target="_blank" rel="noopener" href="https://bigjpg.com/">https://bigjpg.com/</a></p>
 </li>
-<li>
-<p>ImageGlass <a target="_blank" rel="noopener" href="https://imageglass.org/">地址–</a></p>
+<li><p>ImageGlass <a target="_blank" rel="noopener" href="https://imageglass.org/">地址–</a></p>
 </li>
-<li>
-<p>Quickerlook <a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook/">送达🎢</a> win10 <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/p/quicklook/9nv4bs3l1h4s/">商店里也有</a>还可以装插件, 支持一下格式<br>
-<img src="http://m.qpic.cn/psc?/V51YP3cQ2bNLyv1lNkGr4bDahQ3AuFl7/ruAMsa53pVQWN7FLK88i5lNaKOSyKTUrDkvsyDeAt4GgXIjTo4L0IslrOx9Med5YlPJnu.ZnJexSa6TCiFnU2r.yItrQzDZ7rysYu6.o6ac!/b&amp;bo=VAT.AQAAAAADB40!&amp;rf=viewer_4" alt=""></p>
+<li><p>Quickerlook <a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook/">送达🎢</a> win10 <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/p/quicklook/9nv4bs3l1h4s/">商店里也有</a>还可以装插件, 支持一下格式<br><img src="http://m.qpic.cn/psc?/V51YP3cQ2bNLyv1lNkGr4bDahQ3AuFl7/ruAMsa53pVQWN7FLK88i5lNaKOSyKTUrDkvsyDeAt4GgXIjTo4L0IslrOx9Med5YlPJnu.ZnJexSa6TCiFnU2r.yItrQzDZ7rysYu6.o6ac!/b&bo=VAT.AQAAAAADB40!&rf=viewer_4"></p>
 </li>
 </ol>
-<h2 id="📜写作">📜写作</h2>
-<ol>
+<h2 id="📜写作"><a href="#📜写作" class="headerlink" title="📜写作"></a>📜写作</h2><ol>
 <li>VScode <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">写代码常用</a></li>
 <li>typora ♥markdown写作常用 <a target="_blank" rel="noopener" href="https://typora.io/">https://typora.io/</a></li>
 </ol>
-<h2 id="Quicker"><a target="_blank" rel="noopener" href="https://getquicker.net/">Quicker</a></h2>
-<ul>
-<li>为常用操作建立捷径，让效率触手可及!<br>
-<img src="http://m.qpic.cn/psc?/V51YP3cQ2bNLyv1lNkGr4bDahQ3AuFl7/ruAMsa53pVQWN7FLK88i5kfMbTZx19VJv3CWAfJ6vHHOhJQtyMd8t3QnPTiJOjHHHeEAgF9ta5Y.nhEOp1ZLZ8Nef9XEUe4iYSSJtHhMM9o!/b&amp;bo=SwZ7A0sGewMDCSw!&amp;rf=viewer_4" alt=""></li>
+<h2 id="Quicker"><a href="#Quicker" class="headerlink" title="Quicker"></a><a target="_blank" rel="noopener" href="https://getquicker.net/">Quicker</a></h2><ul>
+<li>为常用操作建立捷径，让效率触手可及!<br><img src="http://m.qpic.cn/psc?/V51YP3cQ2bNLyv1lNkGr4bDahQ3AuFl7/ruAMsa53pVQWN7FLK88i5kfMbTZx19VJv3CWAfJ6vHHOhJQtyMd8t3QnPTiJOjHHHeEAgF9ta5Y.nhEOp1ZLZ8Nef9XEUe4iYSSJtHhMM9o!/b&bo=SwZ7A0sGewMDCSw!&rf=viewer_4"></li>
 </ul>
-<h2 id="🧴CAD下载">🧴CAD下载</h2>
-<ol>
+<h2 id="🧴CAD下载"><a href="#🧴CAD下载" class="headerlink" title="🧴CAD下载"></a>🧴CAD下载</h2><ol>
 <li>CAD自学网  <a target="_blank" rel="noopener" href="http://www.cadzxw.com/">http://www.cadzxw.com/</a></li>
 <li>官网  <a target="_blank" rel="noopener" href="https://www.autodesk.com/solutions/cad-design">https://www.autodesk.com/solutions/cad-design</a></li>
 </ol>
-<h2 id="🥠远程控制">🥠远程控制</h2>
-<ol>
+<h2 id="🥠远程控制"><a href="#🥠远程控制" class="headerlink" title="🥠远程控制"></a>🥠远程控制</h2><ol>
 <li>teamview  免费 <a target="_blank" rel="noopener" href="https://www.teamviewer.cn/cn/">https://www.teamviewer.cn/cn/</a></li>
 <li>todesk  个人免费  <a target="_blank" rel="noopener" href="https://www.todesk.com/">https://www.todesk.com/</a></li>
 </ol>
 <blockquote>
-<h2 id="🍭可以去我的网盘看看">🍭<a target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/">可以去我的网盘看看</a></h2>
-<h2 id="🎈还有什么要补冲的请留言，后续会慢慢加上">🎈还有什么要补冲的请留言，后续会慢慢加上</h2>
-</blockquote>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">可爱的Wyang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://ysnsn.cn/64141.html">https://ysnsn.cn/64141.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://ysnsn.cn" target="_blank">阳光小饺子的空间</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/PC/">PC</a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/" target="_blank"><img class="post-qr-code-img" src="/"/></a><div class="post-qr-code-desc"></div></li><li class="reward-item"><a href="/" target="_blank"><img class="post-qr-code-img" src="/"/></a><div class="post-qr-code-desc"></div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/GitHub-jsdelivr.html"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@master/11120200821181132.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">jsdelivr的正确使用方法</div></div></a></div><div class="next-post pull-right"><a href="/58458.html"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/Ysnsn/picture/img/20200817225708.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">butterfly重装所需</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">可爱的Wyang</div><div class="author-info__description">人生即是旅途，我们都在路上</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ysnsn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Ysnsn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wyang0558@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2746130558&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=1370825920" target="_blank" title="网抑云"><i class="fab fa-gg"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><marquee> Welcome to <a style="color:red" href="https://ysnsn.cn" target="_blank" rel="noopener">Ysnsn博客</a>👉本站已开启Pjax，喜欢请收藏本站呦 ^_^!</marquee>  <div class="social-button"> <a class="button--animated" style="text-align:center;position:relative; z-index:1;display:block;background-color:#49b1f5;color:#fff;line-height:2em;margin:auto;padding:.2em" href="https://jq.qq.com/" rel="external nofollow noreferrer" target="_blank">加入 QQ 群聊 👍</a> </div> <br></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A7%A8%E5%89%8D%E8%A8%80%E9%A1%BB%E7%9F%A5"><span class="toc-number">1.</span> <span class="toc-text">🧨前言须知</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%83%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%AE%BF%E9%97%AEGoogle%EF%BC%88%E4%B8%BB%E8%A6%81%E6%98%AF%E7%9C%8B%E5%88%B0%E5%A5%BD%E5%A4%9A%E4%BA%BA%E8%BF%98%E4%B8%8D%E4%BC%9A%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">🎃正确的访问Google（主要是看到好多人还不会）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8D%A1%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99"><span class="toc-number">3.</span> <span class="toc-text">🍡软件分享网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%A1%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7"><span class="toc-number">4.</span> <span class="toc-text">⚡卸载工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80%E4%B8%8B%E8%BD%BD%E7%A5%9E%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text">🚀下载神器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%87%E8%A7%86%E9%A2%91music"><span class="toc-number">6.</span> <span class="toc-text">🎇视频music</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%85%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6"><span class="toc-number">7.</span> <span class="toc-text">✅杀毒软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%99%BB%E5%9E%83%E5%9C%BE%E6%B8%85%E7%90%86"><span class="toc-number">8.</span> <span class="toc-text">♻垃圾清理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%B6%E7%94%B5%E8%84%91%E5%BD%95%E5%B1%8F"><span class="toc-number">9.</span> <span class="toc-text">🔶电脑录屏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="toc-number">10.</span> <span class="toc-text">🛴解压缩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%91%93%E7%BC%A9%E6%94%BE%E6%B5%8F%E8%A7%88"><span class="toc-number">11.</span> <span class="toc-text">👓缩放浏览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9C%E5%86%99%E4%BD%9C"><span class="toc-number">12.</span> <span class="toc-text">📜写作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quicker"><span class="toc-number">13.</span> <span class="toc-text">Quicker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A7%B4CAD%E4%B8%8B%E8%BD%BD"><span class="toc-number">14.</span> <span class="toc-text">🧴CAD下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A5%A0%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">15.</span> <span class="toc-text">🥠远程控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8D%AD%E5%8F%AF%E4%BB%A5%E5%8E%BB%E6%88%91%E7%9A%84%E7%BD%91%E7%9B%98%E7%9C%8B%E7%9C%8B"><span class="toc-number">16.</span> <span class="toc-text">🍭可以去我的网盘看看</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%88%E8%BF%98%E6%9C%89%E4%BB%80%E4%B9%88%E8%A6%81%E8%A1%A5%E5%86%B2%E7%9A%84%E8%AF%B7%E7%95%99%E8%A8%80%EF%BC%8C%E5%90%8E%E7%BB%AD%E4%BC%9A%E6%85%A2%E6%85%A2%E5%8A%A0%E4%B8%8A"><span class="toc-number">17.</span> <span class="toc-text">🎈还有什么要补冲的请留言，后续会慢慢加上</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cet6.html" title="CET6"><img src="https://cdn.jsdelivr.net/gh//Ysnsn/img@latest/2021/美女%20-%2028.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CET6"/></a><div class="content"><a class="title" href="/cet6.html" title="CET6">CET6</a><time datetime="2021-09-16T05:13:54.000Z" title="发表于 2021-09-16 13:13:54">2021-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/python-spider.html" title="Python爬虫学习笔记"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/wall.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python爬虫学习笔记"/></a><div class="content"><a class="title" href="/python-spider.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a><time datetime="2021-07-24T05:13:54.000Z" title="发表于 2021-07-24 13:13:54">2021-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/yarn-add.html" title="yarn的安装使用"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/ff728455b2c576bacb6457bd6f9ea9af.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="yarn的安装使用"/></a><div class="content"><a class="title" href="/yarn-add.html" title="yarn的安装使用">yarn的安装使用</a><time datetime="2021-02-06T05:13:54.000Z" title="发表于 2021-02-06 13:13:54">2021-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/termux.html" title="termux高阶使用教程"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/f9243ef08bfc195c710328fcedc74609.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="termux高阶使用教程"/></a><div class="content"><a class="title" href="/termux.html" title="termux高阶使用教程">termux高阶使用教程</a><time datetime="2021-02-02T07:37:07.000Z" title="发表于 2021-02-02 15:37:07">2021-02-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2020/12/04/2f5c7f8ae45dfbeeaa19d3b092045770.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="利用ffmpeg制作视频床"/></a><div class="content"><a class="title" href="/jsdelivr-m3u8.html" title="利用ffmpeg制作视频床">利用ffmpeg制作视频床</a><time datetime="2020-12-04T15:09:26.000Z" title="发表于 2020-12-04 23:09:26">2020-12-04</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 可爱的Wyang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png"align="absmiddle" width="59px" height="30px" /></a><span>提供加速服务</span></div><div id="running-time"></div><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2020,06,23,0,0,0)).getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='🌈本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);</script></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
-  function initValine () {
-    const valine = new Valine(Object.assign({
-      el: '#vcomment',
-      appId: 'pE6fuMFtYcEgYTceSY23YlFs-MdYXbMMI',
-      master:'09baf6c84634876ef43dfb5b5e7527cd',
-      friends:'0fa72164d542c33924ec89694aad4616,ad10871ff24424bf880b4cbbde9e0c6b',
-      appKey: 'GwiyT9FTAXYmRfkn24oywXtu',
-      placeholder: '🤳昵称框输入QQ号自动获取QQ图像 \n🚩使用Akismet反垃圾评论 \n🌈支持md语法，请尽情表演吧 \n🛴邮件通知时间为8点到24点',
-      avatar: 'monsterid',
-      meta: 'nick,mail,link'.split(','),
-      pageSize: '12',
-      lang: 'zh-CN',
-      recordIP: true,
-      serverURLs: '',
-      emojiCDN: '',
-      emojiMaps: "",
-      enableQQ: true,
-      path: window.location.pathname,
-      requiredFields: ["nick,mail"],
-      visitor: 
-    }, ))
-  }
-
-  if (typeof Valine === 'function') initValine() 
-  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
-}
-
-if ('Valine' === 'Valine' || !true) {
-  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
-  else setTimeout(loadValine, 0)
-} else {
-  function loadOtherComment () {
-    loadValine()
-  }
-}</script></div><link rel="stylesheet" href="/css/ysnsn.css"><script src="/js/ysnsn.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-POWERMODE.mobile = false;
-document.body.addEventListener('input', POWERMODE);
-</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left"},"mobile":{"show":false},"model":{"scale":1.2,"jsonPath":"/live2d/assets/weier.model.json"},"log":false});</script></body></html>
+<h2 id="🍭可以去我的网盘看看"><a href="#🍭可以去我的网盘看看" class="headerlink" title="🍭可以去我的网盘看看"></a>🍭<a target="_blank" rel="noopener" href="https://ysnsn.herokuapp.com/">可以去我的网盘看看</a></h2><h2 id="🎈还有什么要补冲的请留言，后续会慢慢加上"><a href="#🎈还有什么要补冲的请留言，后续会慢慢加上" class="headerlink" title="🎈还有什么要补冲的请留言，后续会慢慢加上"></a>🎈还有什么要补冲的请留言，后续会慢慢加上</h2></blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://Ysnsn.github.io">可爱的Wyang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://ysnsn.github.io/64141.html">https://ysnsn.github.io/64141.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://Ysnsn.github.io" target="_blank">阳光小饺子的空间</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/PC/">PC</a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a></div><div class="post-share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Ysnsn/img/111/03613.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/GitHub-jsdelivr.html" title="jsdelivr的正确使用方法"><img class="cover" src="https://cdn.jsdelivr.net/gh/Ysnsn/picture@master/11120200821181132.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">jsdelivr的正确使用方法</div></div><div class="info-2"><div class="info-item-1">前言 CDN的全称是Content Delivery Network，即内容分发网络。CDN是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN的关键技术主要有内容存储和分发技术。——百度百科   放在Github的资源在国内加载速度比较慢，因此需要使用CDN加速来优化网站打开速度，jsDelivr + Github便是免费且好用的CDN，非常适合博客网站使用。  食用方法 新建Github仓库 上传资源（图片） 使用jsdelivr直接访问仓库里的图片连接如下1https://cdn.jsdelivr.net/gh/GitHub用户名/新建的仓库名/**图片**.jpg 完事，图床做好了  发现问题 当你的release包大于50MB，那么jsdelivr会给你报错并且不给你提供加速服务，例如下面这条链接https://cdn.jsdelivr.net/gh/Ysnsn/picture/111/03613.jpg打开就会出现1Package siz...</div></div></div></a><a class="pagination-related" href="/58458.html" title="butterfly重装所需"><img class="cover" src="https://cdn.jsdelivr.net/gh/Ysnsn/picture/img/20200817225708.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">butterfly重装所需</div></div><div class="info-2"><div class="info-item-1">主要步骤 配置 Git 本地代理   点击展开👉 Git本地代理  Git 同时支持 Socket5 和 HTTP 代理，根据本地客户端具体情况选择一种配置就可以了 Socket5 代理Git 默认的 Socket5 代理应设置为：(其中 server 是服务器地址，port是代理端口) 12git config --global http.proxy socks5://server:portgit config --global https.proxy socks5://server:port   本地服务器的 IPV4 地址就是：127.0.0.1，端口填上面 Clash 中的 Socket5 代理端口 以我的本地代理端口为例，在 Git bash&#x2F;Windows 终端下输入下面命令回车 123$ git config --global http.proxy socks5://127.0.0.1:7891$ git config --global https.proxy socks5://127.0.0.1:7891 Socket5 代理设置完成 HTTP 代理G...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">可爱的Wyang</div><div class="author-info-description">人生即是旅途，我们都在路上</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ysnsn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Ysnsn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wyang0558@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2746130558&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=1370825920" target="_blank" title="网抑云"><i class="fab fa-gg"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><marquee> Welcome to <a style="color:red" href="https://ysnsn.cn" target="_blank" rel="noopener">Ysnsn博客</a>👉本站已开启Pjax，喜欢请收藏本站呦 ^_^!</marquee>  <div class="social-button"> <a class="button--animated" style="text-align:center;position:relative; z-index:1;display:block;background-color:#49b1f5;color:#fff;line-height:2em;margin:auto;padding:.2em" href="https://jq.qq.com/" rel="external nofollow noreferrer" target="_blank">加入 QQ 群聊 👍</a> </div> <br></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A7%A8%E5%89%8D%E8%A8%80%E9%A1%BB%E7%9F%A5"><span class="toc-number">1.</span> <span class="toc-text">🧨前言须知</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%83%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%AE%BF%E9%97%AEGoogle%EF%BC%88%E4%B8%BB%E8%A6%81%E6%98%AF%E7%9C%8B%E5%88%B0%E5%A5%BD%E5%A4%9A%E4%BA%BA%E8%BF%98%E4%B8%8D%E4%BC%9A%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">🎃正确的访问Google（主要是看到好多人还不会）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8D%A1%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99"><span class="toc-number">3.</span> <span class="toc-text">🍡软件分享网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%A1%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7"><span class="toc-number">4.</span> <span class="toc-text">⚡卸载工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80%E4%B8%8B%E8%BD%BD%E7%A5%9E%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text">🚀下载神器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%87%E8%A7%86%E9%A2%91music"><span class="toc-number">6.</span> <span class="toc-text">🎇视频music</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%85%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6"><span class="toc-number">7.</span> <span class="toc-text">✅杀毒软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%99%BB%E5%9E%83%E5%9C%BE%E6%B8%85%E7%90%86"><span class="toc-number">8.</span> <span class="toc-text">♻垃圾清理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%B6%E7%94%B5%E8%84%91%E5%BD%95%E5%B1%8F"><span class="toc-number">9.</span> <span class="toc-text">🔶电脑录屏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="toc-number">10.</span> <span class="toc-text">🛴解压缩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%91%93%E7%BC%A9%E6%94%BE%E6%B5%8F%E8%A7%88"><span class="toc-number">11.</span> <span class="toc-text">👓缩放浏览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9C%E5%86%99%E4%BD%9C"><span class="toc-number">12.</span> <span class="toc-text">📜写作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quicker"><span class="toc-number">13.</span> <span class="toc-text">Quicker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A7%B4CAD%E4%B8%8B%E8%BD%BD"><span class="toc-number">14.</span> <span class="toc-text">🧴CAD下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A5%A0%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">15.</span> <span class="toc-text">🥠远程控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8D%AD%E5%8F%AF%E4%BB%A5%E5%8E%BB%E6%88%91%E7%9A%84%E7%BD%91%E7%9B%98%E7%9C%8B%E7%9C%8B"><span class="toc-number">16.</span> <span class="toc-text">🍭可以去我的网盘看看</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%88%E8%BF%98%E6%9C%89%E4%BB%80%E4%B9%88%E8%A6%81%E8%A1%A5%E5%86%B2%E7%9A%84%E8%AF%B7%E7%95%99%E8%A8%80%EF%BC%8C%E5%90%8E%E7%BB%AD%E4%BC%9A%E6%85%A2%E6%85%A2%E5%8A%A0%E4%B8%8A"><span class="toc-number">17.</span> <span class="toc-text">🎈还有什么要补冲的请留言，后续会慢慢加上</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/wyylovedsc.html" title="写给我的宝宝"><img src="/img/2025091601.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="写给我的宝宝"/></a><div class="content"><a class="title" href="/wyylovedsc.html" title="写给我的宝宝">写给我的宝宝</a><time datetime="2025-09-16T03:09:02.000Z" title="发表于 2025-09-16 11:09:02">2025-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cet6.html" title="CET6"><img src="https://cdn.jsdelivr.net/gh//Ysnsn/img@latest/2021/美女%20-%2028.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CET6"/></a><div class="content"><a class="title" href="/cet6.html" title="CET6">CET6</a><time datetime="2021-09-16T05:13:54.000Z" title="发表于 2021-09-16 13:13:54">2021-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/python-spider.html" title="Python爬虫学习笔记"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/wall.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python爬虫学习笔记"/></a><div class="content"><a class="title" href="/python-spider.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a><time datetime="2021-07-24T05:13:54.000Z" title="发表于 2021-07-24 13:13:54">2021-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/yarn-add.html" title="yarn的安装使用"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/ff728455b2c576bacb6457bd6f9ea9af.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="yarn的安装使用"/></a><div class="content"><a class="title" href="/yarn-add.html" title="yarn的安装使用">yarn的安装使用</a><time datetime="2021-02-06T05:13:54.000Z" title="发表于 2021-02-06 13:13:54">2021-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/termux.html" title="termux高阶使用教程"><img src="https://cdn.jsdelivr.net/gh/Ysnsn/img@latest/2021/02/02/f9243ef08bfc195c710328fcedc74609.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="termux高阶使用教程"/></a><div class="content"><a class="title" href="/termux.html" title="termux高阶使用教程">termux高阶使用教程</a><time datetime="2021-02-02T07:37:07.000Z" title="发表于 2021-02-02 15:37:07">2021-02-02</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 可爱的Wyang</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 6.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left"},"mobile":{"show":false},"model":{"scale":1.2,"jsonPath":"/live2d_models/assets/weier.model.json"},"log":false});</script></body></html>
